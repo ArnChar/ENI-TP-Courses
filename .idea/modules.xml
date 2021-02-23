@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ENI-TP-Courses.iml" filepath="$PROJECT_DIR$/.idea/modules/ENI-TP-Courses.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ENI-TP-Courses.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ENI-TP-Courses.app.iml" />
+    </modules>
+  </component>
+</project>

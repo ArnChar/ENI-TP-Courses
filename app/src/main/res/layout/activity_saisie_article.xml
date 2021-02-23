@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fr.eni.courses.SaisieArticleActivity"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_saisie_article"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="@string/app_name"
+        app:titleTextColor="?attr/colorOnPrimary" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:columnCount="2"
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_nom" />
+        <EditText
+            android:id="@+id/et_sais_art_nom"
+            android:layout_height="wrap_content"
+            android:layout_width="290dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_description"
+            />
+        <EditText
+            android:id="@+id/et_sais_art_description"
+            android:layout_width="290dp"
+            android:layout_height="100dp"
+            android:inputType="text|textMultiLine" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_url"
+            />
+        <EditText
+            android:id="@+id/et_sais_art_url"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/txt_prix"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <EditText
+                android:id="@+id/et_sais_art_prix"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="00.00"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="€"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/txt_note" />
+        <RatingBar
+            android:id="@+id/rb_sais_art_note"
+            android:layout_width="wrap_content"
+            android:rating="3"
+            android:scaleX=".7"
+            android:scaleY=".7"
+            android:transformPivotX="0dp"
+            android:transformPivotY="30dp"
+            android:isIndicator="false"
+            />
+    </GridLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:text="@string/btn_sais_art_save"
+        android:onClick="onClickEnregistrer"
+        />
+
+</GridLayout>

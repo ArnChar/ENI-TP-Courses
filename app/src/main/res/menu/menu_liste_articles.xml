@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_ajout"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Ajouter"
+        app:showAsAction="ifRoom"
+        android:onClick="onCLickAjouter"
+        />
+
+    <item
+        android:id="@+id/action_configuration"
+        android:title="Configuration"
+        app:showAsAction="never"
+        android:onClick="onClickConfiguration"
+        />
+
+
+</menu>
